@@ -11,22 +11,25 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 
 var chilometri = prompt("inserire il numero di km che vuole percorrere");
 var eta = prompt("Inserire età passeggero")
+var prezzo = chilometri * 0.21;
+
+console.log(chilometri * 0.21);
 
 var minorenne = eta < 18;
 var maturo = eta > 65;
 
-console.log(chilometri * 0.21);
-
-document.getElementById("prezzo").innerHTML = chilometri * 0.21;
-
-if (minorenne)
+if (eta < 18)
 {
-    console.log("prezzo" * 0.8);
+    prezzo = prezzo * 0.8;
 }
 else if (eta > 65)
 {
-    console.log("prezzo" * 0.6);
+    prezzo = prezzo * 0.6;
 }
+
+document.getElementById("prezzo").innerHTML = prezzo;
+
+
 
 
 
