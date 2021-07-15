@@ -27,9 +27,12 @@ else if (eta > 65)
     prezzo = prezzo * 0.6;
 }
 
-document.getElementById("prezzo").innerHTML = prezzo;
-
-
+function myFunction() 
+{
+    var num = prezzo;
+    var n = num.toFixed(2);
+    document.getElementById("prezzo").innerHTML = n;
+}
 
 
 
