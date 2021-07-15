@@ -4,14 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FINE CSS -->
     <title>Biglietto del treno</title>
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
+        <div class="box_header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Trenitalia_logo.svg/1280px-Trenitalia_logo.svg.png" alt="Trenitalia_logo">
+        </div>
+    </header>
+    <!-- FINE HEADER -->
+    <br>
+    <!-- MAIN -->
+    <main>
+        <div class="box_biglietto">
+            <h1 class="white">Dettaglio Biglietto</h1>
+            <!-- table -->
+            <table>
+                <!-- intestazione tabella -->
+                <thead>
+                    <tr>
+                        <th><strong>Biglietto per Cefalù</strong></th>
+                    </tr>
+                </thead>
     
-<p>Clicca per sapere il <button onclick="myFunction()">Prezzo</button></p>
+                <!-- corpo tabella -->
+                <tbody>
+                    <tr class="white">
+                        <td>Data Partenza</td>
+                        <td> Ora</td>
+                        <td>Da</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>16/07/2021</td>
+                        <td>13:00</td>
+                        <td>Palermo</td>
+                        <td>Cefalù</td>
+                    </tr>
+                </tbody>
+    
+                <!-- chiusura tabella -->
+                <tfoot>
+                    <tr class="white">
+                        <td>Data Arrivo</td>
+                        <td>Ora</td>
+                        <td>Servizio</td>
+                    </tr>
+                    <tr>
+                        <td>16/07/2021</td>
+                        <td>13:42</td>
+                        <td>2° Classe</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <!-- fine table -->
+            <br>
+            <hr>
+            <div class="box_code">
+                <img class="img_code" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/QR-code-obituary.svg/768px-QR-code-obituary.svg.png" alt="qr code">
+            </div>
+            <p>Clicca per sapere il 
+                <button class="btn_blue" onclick="myFunction()">Prezzo</button>
+            </p>
+            <h1 id="prezzo"></h1>
+        </div>
 
+        
+    </main>  
+    <!-- FINE MAIN   -->
 
-    <h1 id="prezzo"></h1>
 
     <!-- js -->
     <script src="js/main.js"></script>
