@@ -8,3 +8,13 @@ va applicato uno sconto del 40% per gli over 65.
 
 L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 */
+
+var chilometri = prompt("inserire il numero di km che vuole percorrere");
+var eta = prompt("Inserire età passeggero")
+
+console.log(chilometri + " " + eta);
+
+document.getElementById("prezzo").innerHTML = chilometri * 0.21;
+
+
+
